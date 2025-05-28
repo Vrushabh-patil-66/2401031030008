@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recommended Movies - Movie Recommendation</title>
+	    <script src="app.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <img src="logo.png" alt="Movie Reel Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">← Back To Home Page</a></li>
+                    <li><a href="logout.html">Logout</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <main>
+            <div class="content-box">
+                <h1>Recommended Movies</h1>
+                
+                <ul class="movie-list">
+			
+			         <script>
+        // Function to display the stored recommendations from localStorage
+        document.addEventListener("DOMContentLoaded", function() {
+            const recommendedMovies = JSON.parse(localStorage.getItem('recommendedMovies'));
+
+            // Check if there are recommendations stored
+            if (recommendedMovies && recommendedMovies.length > 0) {
+                const movieList = document.getElementById('movie-list');
+                recommendedMovies.forEach(movie => {
+                    const listItem = document.createElement('li');
+                    listItem.textContent = movie;
+                    movieList.appendChild(listItem);
+                });
+            } else {
+                const movieList = document.getElementById('movie-list');
+                movieList.innerHTML = '<li>No recommendations available.</li>';
+            }
+        });
+    </script>
+            </div>
+        </main>
+        
+        <footer>
+            <div class="footer-content">
+                <div class="contact">
+                    <p>STAY CONNECTED</p>
+                    <p>234 Elm Street  Suite 567  Metropolis, XY 12345</p>
+                    <p>Phone: 91-6351306136  Email: hdhub4u@gmail.com</p>
+                </div>
+                <div class="copyright">
+                    <p>&copy; 2025 All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration - Movie Recommendation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <main>
+            <div class="content-box">
+                <h1>Registration</h1>
+                
+                <form action="index.html" method="post">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    </div>
+                    
+                    <div class="form-group" style="display: flex; gap: 10px;">
+                        <input type="password" id="password" name="password" placeholder="Enter password" required style="flex: 1;">
+                        <input type="password" id="confirm_password" name="confirm_password" placeholder="Confirm password" required style="flex: 1;">
+                    </div>
+                    
+                    <div class="radio-group">
+                        <div class="radio-option">
+                            <input type="radio" id="male" name="gender" value="male">
+                            <label for="male">Male</label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" id="female" name="gender" value="female">
+                            <label for="female">Female</label>
+                        </div>
+                    </div>
+                    
+                    <div class="checkbox-option">
+                        <input type="checkbox" id="remember" name="remember">
+                        <label for="remember">Remember me</label>
+                    </div>
+                    
+                    <button type="submit" class="btn">Register</button>
+                </form>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
